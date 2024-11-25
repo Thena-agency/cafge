@@ -4,7 +4,7 @@ import { MdOutlineStar } from "react-icons/md";
 
 export default function Testimonial() {
     return (
-        <div className="w-[400px] flex flex-col items-center gap-[1rem] border border-solid rounded-3xl border-ruby">
+        <div className="w-[350px] flex flex-col items-center gap-[1rem] border border-solid rounded-3xl border-ruby">
             <div className=" w-[160px] h-[160px] bg-black rounded-full relative mt-12 ">
                 <Image src={"/profile/profile1.png"} fill={true} alt="client image"></Image>
             </div>

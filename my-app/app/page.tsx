@@ -6,6 +6,7 @@ import Services from "./components/Services/Services";
 import Why_Us from "./components/Why Us/Why_Us";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Why_Us />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }
