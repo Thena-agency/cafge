@@ -135,6 +135,49 @@ a {
 h1,h2,h3,h4{
   font-family: var(--georgia-font);
 }
+
 .textShadow{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.container{
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+  max-width: 1536px;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  }
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  }

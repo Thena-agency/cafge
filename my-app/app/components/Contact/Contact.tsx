@@ -8,8 +8,8 @@ import Form from "../utils/Form/Form";
 
 export default function Contact() {
     return (
-        <section className="w-full">
-            <div className="mx-[120px]">
+        <section className="container w-full">
+            <div className="container">
                 <div className="w-full flex justify-between h-[70dvh] mb-8 ">
                     <div className="w-2/5 ">
                         <div>

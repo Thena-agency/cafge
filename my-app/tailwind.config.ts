@@ -21,6 +21,14 @@ const config: Config = {
         'hero-pattern': "url('/images/Cafge_hero.png')",
         'footer-texture': "url('/img/footer-texture.png')",
       },
+      screens: {
+        'xs': '475px',
+        'sm': '641px',
+        'md' :'769px',
+        'lg': '1025px',
+        'xl': '1281px',
+        '2xl': '1536px',
+      }
     },
   },
   plugins: [],

@@ -7,6 +7,8 @@ import Why_Us from "./components/Why Us/Why_Us";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { FaCaretDown } from "react-icons/fa";
+import Factsbar from "./components/Factsbar/Factsbar";
 
 export default function Home() {
   return (
@@ -14,11 +16,12 @@ export default function Home() {
       <Navbar/>
       <Hero />
       <About />
+      <Factsbar />
       <Services />
       <Why_Us />
       <Testimonials />
-      <Contact />
-      <Footer />
+      {/*<Contact />
+      <Footer /> */}
     </div>
   );
 }

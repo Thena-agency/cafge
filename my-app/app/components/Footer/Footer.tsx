@@ -8,8 +8,8 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="w-full h-[40dvh] bg-[#F5EDEF] mt-[60px] leading-5">
-            <div className="mx-[120px] flex justify-between gap-20 py-8">
+        <footer className="h-[40dvh] bg-[#F5EDEF] mt-[60px] leading-5">
+            <div className="container flex justify-between gap-20 py-8">
                 <div className="flex-1">
                     <div className="relative w-[128px] h-[64px] mb-6">
                         <Image src={"/Logo/Cafge_logo.svg"}  alt="logo of Cafge accountant firm" fill={true} ></Image> 
@@ -32,7 +32,7 @@ export default function Footer() {
                     <ul className=" flex gap-4">
                         <li className="w-[48px] h-[48px] bg-white flex justify-center items-center"><FaFacebookF color="#af1837" size={26}/></li>
                         <li className="w-[48px] h-[48px] bg-white flex justify-center items-center"><FaLinkedinIn color="#af1837" size={26}/></li>
-                        <li className="w-[48px] h-[48px] bg-white flex justify-center items-center"><FaInstagram color="#af1837" size={28}/></li>
+                        <li className="w-[48px] h-[48px] bg-white flex justify-center items-center "><FaInstagram color="#af1837" size={28}/></li>
                     </ul>
                 </div>
             </div>

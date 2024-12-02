@@ -6,11 +6,11 @@ import { IoLocationSharp } from "react-icons/io5";
 
 export default function Navbar() {
     return (
-    <header>
-        <nav className=" w-full h-[10dvh] border-[0px] border-solid font-poppins">
+    <header className="">
+        <nav className=" h-[10dvh]  font-poppins">
             <div className="">
-                <div className="bg-[#AF1837] h-[3dvh]  flex">
-                    <div className="flex  justify-between items-center mx-[120px] w-[100dvw]">
+                <div className="bg-[#AF1837] h-[3dvh]  flex max-sm:hidden">
+                    <div className="container flex  justify-between items-center w-full">
                         <div className="flex  content-center">
                             <div className="flex  mr-4">
                                 <MdPhone />
@@ -27,13 +27,13 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white h-[7dvh] flex">
-                    <div className="flex flex-column justify-between items-center mx-[120px] w-[100dvw]">
+                <div className="bg-white h-[7dvh] flex max-sm:h-[10dvh] ">
+                    <div className="container flex flex-column justify-between items-center mx-[120px] w-full">
                         <div className="">
                             <Image src={"/Logo/Cafge_logo.svg"}  alt="logo of Cafge accountant firm" width={128} height={64}></Image> 
                         </div>
-                        <div>
-                            <ul className="flex flex-column items-center">
+                        <div className="">
+                            <ul className="flex flex-column items-center max-md:hidden">
                                 <li>Accueil</li>
                                 <li className="ml-4 ">A propos</li>
                                 <li className="ml-4 ">Services</li>
@@ -41,6 +41,7 @@ export default function Navbar() {
                                 <li className="ml-4 ">Blog</li>
                                 <li className="ml-4"><button className="border border-solid px-2 py-3 bg-[#AF1837] text-white">contactez-nous</button></li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
