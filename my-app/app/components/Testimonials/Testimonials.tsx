@@ -4,7 +4,7 @@ import Carousel from "../utils/carousel/Carousel";
 
 export default function Testimonials() {
     return (
-        <section className="w-full h-[100dvh]">
+        <section className="w-full">
             <div className="container ">
                 <div className="w-full my-8">
                     <div className="mt-[60px] title flex items-center">

@@ -139,6 +139,10 @@ h1,h2,h3,h4{
   font-family: var(--georgia-font);
 }
 
+.hero-fg{
+  background-image: linear-gradient(135deg, rgba(4,4,4,0.9948354341736695) 0%, rgba(252,252,252,0) 50%, rgba(4,4,4,0.7231267507002801) 100%);
+}
+
 .textShadow{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
