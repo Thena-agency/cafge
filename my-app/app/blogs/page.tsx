@@ -5,9 +5,8 @@ import Blog_card from "../components/Blog_card/Blog_card";
 import { fetchPages, notion } from "@/lib/notion";
 
 export default async function Blog() {
-  const posts = await fetchPages();
-//   console.log('yoo ', posts.results[1]);
-  
+	const posts = await fetchPages();
+	//   console.log('yoo ', posts.results[1]);
 
 	return (
 		<div className="">
@@ -15,8 +14,10 @@ export default async function Blog() {
 			<Hero />
 			{posts.results.map((post) => {
 				return (
-					<Blog_card post={post}  />
-				)
+					<article key={post.id}>
+						<Blog_card post={post} />
+					</article>
+				);
 			})}
 			<Footer />
 		</div>
