@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Services() {
     return (
-        <section className="w-full bg-[url('/images/Services_BG.png')] border-[1px] border-solid border-transparent ">
+        <section className="w-full bg-[url('/images/Services_BG.png')] border-[1px] border-solid border-transparent " id="Services">
             <div className="container">
                 <div className="w-full py-[60px]">
                     <div className="title flex items-center">

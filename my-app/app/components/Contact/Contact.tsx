@@ -8,10 +8,10 @@ import Form from "../utils/Form/Form";
 
 export default function Contact() {
     return (
-        <section className="container w-full">
-            <div className="container">
-                <div className="w-full flex justify-between h-[70dvh] mb-8 ">
-                    <div className="w-2/5 ">
+        <section className="w-full" id="Contact">
+            <div className="container my-8 py-8">
+                <div className="w-full flex justify-between items-center mb-8 h-full max-md:flex-col max-md:items-start">
+                    <div className="w-2/5  max-md:w-full">
                         <div>
                             <h2 className="text-[3rem] text-ruby mb-8"> Let's Talk</h2>
                             <p className="">We collaborate with thousands of creators, 

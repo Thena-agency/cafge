@@ -4,10 +4,10 @@ import { MdOutlineStar } from "react-icons/md";
 
 export default function Form() {
     return (
-        <div className="bg-[#F4F4F4] h-full border rounded-2xl">
-            <form action="" className="m-10 w-[40dvw]">
-                <div className="grid grid-cols-2 grid-rows-3 h-[45dvh] gap-y-[7vh] mb-10">
-                    <div className="row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col justify-between mr-12">
+        <div className="bg-[#F4F4F4] h-full border rounded-2xl w-[50%] max-md:w-full max-md:mt-8">
+            <form action="" className="w-[100%] p-8">
+                <div className="grid w-full grid-cols-2 grid-rows-3  gap-y-[32px] mb-10 gap-4 max-xs:flex max-xs:flex-col">
+                    <div className="row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col justify-between">
                         <span className="mb-4 flex-end">First name</span>
                         <input type="text" className="bg-[#F4F4F4] border border-solid border-x-0 border-t-0 outline-none" placeholder="test" />
                     </div>
@@ -15,7 +15,7 @@ export default function Form() {
                         <span className="mb-4 ">Last name</span>
                         <input type="text" className="bg-[#F4F4F4] border border-solid border-x-0 border-t-0 outline-none" placeholder="test"/>
                     </div>
-                    <div className="row-start-2 row-end-3 col-start-1 col-end-2 flex flex-col justify-between mr-12">
+                    <div className="row-start-2 row-end-3 col-start-1 col-end-2 flex flex-col justify-between">
                         <span className="mb-4 col-start-1 col-end-4 row-start-3 row-end-4">Email</span>
                         <input type="text"  className="bg-[#F4F4F4] border border-solid border-x-0 border-t-0 outline-none" placeholder="test"/>
                     </div>

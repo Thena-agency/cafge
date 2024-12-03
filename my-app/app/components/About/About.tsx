@@ -3,7 +3,7 @@ import Factsbar from "../Factsbar/Factsbar";
 
 export default function About() {
     return (
-        <section className="w-full">
+        <section className="w-full" id="About">
             <div className="container flex justify-between my-[60px] max-lg:flex-col max-sm:items-center">
                 <div className="w-3/6 mr-12 max-lg:w-full max-lg:mx-0">
                     <div className="title flex items-center">

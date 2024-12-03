@@ -2,7 +2,7 @@
 
 export default function Hero() {
     return (
-        <section className="w-full h-[90dvh] bg-hero-pattern bg-cover bg-center bg-no-repeat">
+        <section className="w-full h-[90dvh] bg-hero-pattern bg-cover bg-center bg-no-repeat" id="Hero">
             <div className="container">
                 <div className="flex flex-col justify-center items-start h-[90dvh] w-2/5 max-2xl:w-3/5 max-md:w-5/6 max-xs:w-full">
                     <h1 className=" text-white text-[3.5rem] mb-4 max-lg:text-[3rem] max-sm:text-[2.5rem] max-xs:text-[2rem]">

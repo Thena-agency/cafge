@@ -131,6 +131,9 @@ a {
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 h1,h2,h3,h4{
   font-family: var(--georgia-font);
@@ -181,3 +184,7 @@ h1,h2,h3,h4{
     width: 100%;
   }
   }
+
+.pause:hover {
+  animation-play-state: paused;
+}
