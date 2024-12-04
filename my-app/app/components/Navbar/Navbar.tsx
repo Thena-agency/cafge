@@ -38,7 +38,7 @@ export default function Navbar() {
                                 <Link href="#About" scroll={true}><li className="ml-4 ">A propos</li></Link>
                                 <Link href="#Services" scroll={true}><li className="ml-4 ">Services</li></Link>
                                 <Link href="/Partners"><li className="ml-4 ">Partenaires</li></Link>
-                                <Link href="/Blog"><li className="ml-4 ">Blog</li></Link>
+                                <Link href="/blogs"><li className="ml-4 ">Blog</li></Link>
                                 <Link href="#Contact" scroll={true}><li className="ml-4"><button className="border border-solid px-2 py-3 bg-[#AF1837] text-white">contactez-nous</button></li></Link>
                             </ul>
                             
