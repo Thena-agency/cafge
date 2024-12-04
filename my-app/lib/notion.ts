@@ -6,13 +6,29 @@ import {
 import { cache } from "react";
 import "server-only";
 
-export const notion = new Client({
-	auth: process.env.NOTION_API_KEY,
+export const notionBlogs = new Client({
+	auth: process.env.NOTION_BLOGS_API_KEY,
+});
+
+export const notionPartners = new Client({
+	auth: process.env.NOTION_PARTENERS_API_KEY,
 });
 
 export const fetchPages = cache(() => {
-	return notion.databases.query({
-		database_id: process.env.NOTION_DATABASE_ID!,
+	return notionBlogs.databases.query({
+		database_id: process.env.NOTION_BLOGS_ID!,
+		filter: {
+			property: "Status",
+			status: {
+				equals: "Live",
+			},
+		},
+	});
+});
+
+export const fetchPagesPartners = cache(() => {
+	return notionPartners.databases.query({
+		database_id: process.env.NOTION_PARTENERS_ID!,
 		filter: {
 			property: "Status",
 			status: {
@@ -23,9 +39,9 @@ export const fetchPages = cache(() => {
 });
 
 export const fetchBySlug = cache((slug: string) => {
-	return notion.databases
+	return notionBlogs.databases
 		.query({
-			database_id: process.env.NOTION_DATABASE_ID!,
+			database_id: process.env.NOTION_BLOGS_ID!,
 			filter: {
 				property: "slug",
 				rich_text: {
@@ -37,7 +53,7 @@ export const fetchBySlug = cache((slug: string) => {
 });
 
 export const fetchPageBlocks = cache((pageId: string) => {
-	return notion.blocks.children
+	return notionBlogs.blocks.children
 		.list({
 			block_id: pageId,
 		})

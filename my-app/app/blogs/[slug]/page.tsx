@@ -1,4 +1,4 @@
-import { fetchBySlug, fetchPageBlocks, notion } from "@/lib/notion";
+import { fetchBySlug, fetchPageBlocks, notionBlogs } from "@/lib/notion";
 import React from "react";
 import { notFound } from "next/navigation";
 import { NotionRenderer } from "@notion-render/client";
@@ -14,7 +14,7 @@ export default async function page({ params }: { params: { slug: string } }) {
 	const blocks = await fetchPageBlocks(post.id);
 
 	const renderer = new NotionRenderer({
-		client: notion,
+		client: notionBlogs,
 	});
 
 	renderer.use(hljsPlugin({}));
