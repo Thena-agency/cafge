@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import Blog_card from "../components/Blog_card/Blog_card";
-import { fetchPages, notion } from "@/lib/notion";
+import { fetchPages } from "@/lib/notion";
 
 export default async function Blog() {
 	const posts = await fetchPages();

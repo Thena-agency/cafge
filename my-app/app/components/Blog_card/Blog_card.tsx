@@ -6,7 +6,8 @@ import Link from "next/link";
 // if you want to use homemade type bc the built-in type is bugy you need to put all the proprities
 export default function Blog_card({ post }: any) {
 	// console.log("aaa: ", post);
-    let Slug: string = 'blogs/' + post.properties.slug?.rich_text?.[0]?.plain_text 
+	let Slug: string =
+		"blogs/" + post.properties.slug?.rich_text?.[0]?.plain_text;
 
 	const Title: string | null = post.properties.Title.title[0].plain_text;
 	const coverImg: string =
