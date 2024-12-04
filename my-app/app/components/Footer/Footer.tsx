@@ -4,7 +4,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
+import ThenaStamp from "../utils/ThenaStamp/ThenaStamp";
 
 export default function Footer() {
     return (
@@ -36,6 +36,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+            <ThenaStamp />
         </footer>
     );
   }

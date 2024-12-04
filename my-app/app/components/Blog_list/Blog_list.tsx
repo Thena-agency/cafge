@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Blog_card from "../Blog_card/Blog_card";
-import { fetchPages, notion } from "@/lib/notion";
+import { fetchPages } from "@/lib/notion";
 
 export default async function Blog_list() {
     const posts = await fetchPages();

@@ -11,15 +11,16 @@ export default function Partner({ post }: any) {
 
 	return (
 		<div className="w-[240px] h-[200px] border border-solid border-ruby rounded-2xl relative max-md:w-[200px] max-md:h-[160px] max-xs:w-[240px] max-xs:h-[200px]">
-			<Image
-				unoptimized
-				src={coverImg}
-				height={120}
-				width={160}
-				alt="Cafge logo"
-				className="absolute top-[35%] left-[50%] translate-x-[-50%] "
-			/>
-			<div className="flex gap-4 flex-col justify-end h-full p-4">
+			<div className="relative w-[130px] h-[130px] top-1 left-[50%] translate-x-[-50%] max-md:w-[100px] max-md:h-[100px] max-xs:w-[130px] max-xs:h-[130px]">
+				<Image
+					unoptimized
+					src={coverImg}
+					fill={true}
+					alt="Cafge logo"
+					className=""
+				/>
+			</div>
+			<div className="flex gap-3 flex-col justify-end p-2">
 				<h3 className="text-[1.25rem]">{Title}</h3>
 				<p className="text-[1rem]">{Tag}</p>
 			</div>
